@@ -19,7 +19,6 @@ class Event(models.Model):
         return self.name + " | " + str(self.date)
 
 
-
 class Allocation(models.Model):
     user = models.ForeignKey(User)
     event = models.ForeignKey(Event)
