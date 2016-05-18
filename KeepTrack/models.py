@@ -12,7 +12,7 @@ class KeepTrackUser(models.Model):
 class Event(models.Model):
     name = models.CharField(max_length=512)
     description = models.CharField(max_length=512)
-    date = models.DateTimeField()
+    date = models.DateField()
     status = models.BooleanField(default=False)
 
     def __unicode__(self):
